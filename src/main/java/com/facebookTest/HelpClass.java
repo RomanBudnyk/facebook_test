@@ -34,7 +34,7 @@ public class HelpClass {
     //Use this for cross-browser testing. Run cross-browser-test.xml for this.
     @BeforeTest
     @Parameters({"browser"})
-    public void start(String browser) throws Exception {
+    public void crossBrowserRun(String browser) throws Exception {
         if (browser.equalsIgnoreCase("firefox")) {
             System.setProperty("webdriver.gecko.driver", ".\\geckodriver.exe");
             FirefoxOptions options = new FirefoxOptions();
