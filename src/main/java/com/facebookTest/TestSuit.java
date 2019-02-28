@@ -16,7 +16,7 @@ public class TestSuit extends HelpClass {
     @Test
     public void addWorkPlace() {
         loginPage.loginAs(EMAIL, PASSWORD, driver, wait);
-        mainPage.disableNotif(driver, wait);
+        mainPage.disableNotificationAlert(driver, wait);
         mainPage.clickOnProfile(driver, wait);
         profilePage.clickOnAbout(driver, wait);
         profilePage.clickOnWorkAndStudy(driver, wait);

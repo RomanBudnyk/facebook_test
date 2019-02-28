@@ -33,12 +33,10 @@ public class ProfilePage {
         System.out.println("Add work button pressed.");
     }
 
-    public ProfilePage fillCompanyField(String company, WebDriver driver, WebDriverWait wait, Actions actions) {
+    public void fillCompanyField(String company, WebDriver driver, WebDriverWait wait, Actions actions) {
         actions.click(wait.until(ExpectedConditions.visibilityOfElementLocated(companyField))).sendKeys(company).pause(1000).build().perform();
         System.out.println("Company field filled up.");
-        return this;
     }
-
 
     public void selectCompanyFromDropdown(WebDriver driver, WebDriverWait wait, Actions actions) {
         driver.manage().timeouts().implicitlyWait(100, TimeUnit.MILLISECONDS);

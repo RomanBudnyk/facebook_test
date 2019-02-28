@@ -35,4 +35,5 @@ public class LoginPage {
         assertTrue(wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("sideNav"))).isDisplayed());
         System.out.println("Login was succeed.");
     }
+
 }

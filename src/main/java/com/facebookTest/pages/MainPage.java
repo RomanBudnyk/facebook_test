@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class MainPage {
     private By profileButton = By.id("userNav");
 
-    public void disableNotif(WebDriver driver, WebDriverWait wait) {
+    public void disableNotificationAlert(WebDriver driver, WebDriverWait wait) {
         try {
             wait.until(ExpectedConditions.alertIsPresent()).dismiss();
             System.out.println("Alert dismissed successfully.");
