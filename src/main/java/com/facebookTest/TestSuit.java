@@ -12,7 +12,7 @@ public class TestSuit extends HelpClass {
     private MainPage mainPage = new MainPage();
     private ProfilePage profilePage = new ProfilePage();
 
-    //method to add company into Facebook profile
+    //method to add company into Facebook profile, without additional fields
     @Test
     public void addWorkPlace() {
         loginPage.loginAs(EMAIL, PASSWORD, driver, wait);
